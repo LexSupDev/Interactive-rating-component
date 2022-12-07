@@ -175,7 +175,52 @@ footer {
   color: hsl(225deg, 100%, 94%);
 }
 
+/*  Media queries   */
 @media screen and (max-width: 640px) {
+  .rateComp {
+    margin-top: 153px;
+    width: 330px;
+  }
+  .rateComp__quiz {
+    padding: 25px 25px 30px 25px;
+  }
+  .rateComp__title {
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-top: 58px;
+  }
+  .rateComp__desc {
+    letter-spacing: -0.4px;
+    line-height: 1.5;
+  }
+  .markList__item {
+    padding: 13px 18px 11px;
+  }
+  .rateComp__button {
+    margin-top: 7px;
+  }
+  .rateComp__thanks {
+    padding: 25px;
+  }
+  .rateComp__thanks:before {
+    top: 30px;
+    left: 80px;
+  }
+  .thanksComp {
+    font-size: 14px;
+  }
+  .thanksComp__selected {
+    margin-top: 130px;
+    padding: 7px 15px;
+  }
+  .thanksComp__title {
+    margin-top: 28px;
+    font-size: 24px;
+    letter-spacing: 0px;
+  }
+  .thanksComp__desc {
+    margin-bottom: 16px;
+  }
   .attribution {
     flex-wrap: wrap;
   }
