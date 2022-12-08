@@ -24,8 +24,12 @@ function handleListClick (event) {
 }
 
 submitButton.addEventListener('click', function (e) {
-    e.preventDefault;
-    selectedMarkPlace.textContent = selectedMark;
-    rateQuiz.classList.add("hidden");
-    rateThanks.classList.remove("hidden");    
+    if (!selectedItem) {
+        alert("You have not selected a grade. Please grade us!");
+    } else if(selectedItem.classList.contains('markList__item--active')) {
+        e.preventDefault;
+        selectedMarkPlace.textContent = selectedMark;
+        rateQuiz.classList.add("hidden");
+        rateThanks.classList.remove("hidden");    
+    } 
 });

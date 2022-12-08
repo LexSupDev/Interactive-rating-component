@@ -15,9 +15,9 @@ body {
 /*  rateComp    */
 .rateComp {
   margin: 0 auto;
-  width: 410px;
+  max-width: 410px;
   margin-top: 196px;
-  background-color: hsl(213deg, 19%, 18%);
+  background-image: linear-gradient(to bottom, hsla(213deg, 20%, 18%, 0.864), hsla(213deg, 20%, 18%, 0.322));
   border-radius: 25px;
 }
 
@@ -70,14 +70,15 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   color: hsl(216deg, 12%, 54%);
   font-weight: 700;
+  transition-duration: 0.4s;
 }
-.markList__item:hover, .markList__item:focus {
-  color: white;
-  background-color: hsl(217deg, 12%, 63%);
-}
-.markList__item--active {
+.markList__item--active, .markList__item:active {
   color: white;
   background-color: hsl(25deg, 97%, 53%);
+}
+.markList__item:hover {
+  color: white;
+  background-color: hsl(217deg, 12%, 63%);
 }
 
 .rateComp__button {
@@ -91,7 +92,7 @@ body {
   background-color: hsl(25deg, 97%, 53%);
   border: none;
 }
-.rateComp__button:hover, .rateComp__button:focus {
+.rateComp__button:hover {
   color: hsl(25deg, 97%, 53%);
   background-color: white;
 }
@@ -179,7 +180,7 @@ footer {
 @media screen and (max-width: 640px) {
   .rateComp {
     margin-top: 153px;
-    width: 330px;
+    max-width: 330px;
   }
   .rateComp__quiz {
     padding: 25px 25px 30px 25px;

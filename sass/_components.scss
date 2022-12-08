@@ -2,9 +2,9 @@
 
 .rateComp {
     margin: 0 auto;
-    width: 410px;
+    max-width: 410px;
     margin-top: 196px;
-    background-color: $darkBlue;
+    background-image: linear-gradient( to bottom, hsla(213, 20%, 18%, 0.864), hsla(213, 20%, 18%, 0.322) );;
     border-radius: 25px;
 }
 
@@ -59,17 +59,20 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: $mediumGrey;
     font-weight: 700;
+    transition-duration: 0.4s;
 
-    &:hover,
-    &:focus {
+    &--active,
+    &:active {
+        color: white;
+        background-color: $primaryOrange;
+    }
+
+    &:hover {
         color: white;
         background-color: $lightGrey;
     }
 
-    &--active {
-        color: white;
-        background-color: $primaryOrange;
-    }
+    
 }
 
 .rateComp__button {
@@ -83,8 +86,7 @@
     background-color: $primaryOrange;
     border: none;
 
-    &:hover,
-    &:focus {
+    &:hover {
         color: $primaryOrange;
         background-color: white;
     }
@@ -179,7 +181,7 @@ footer {
 @media screen and (max-width: $mobile-size) {
     .rateComp{
         margin-top: 153px;
-        width: 330px;
+        max-width: 330px;
     }
 
     .rateComp__quiz {
