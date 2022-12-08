@@ -51,7 +51,7 @@ I learned JavaScript basics and practice to use handlers.
 
 ### Continued development
 
-Due to comment on my solution, i wanted to rewrite "rating button" part with <form>.   
+Due to comment on my solution, i wanted to rewrite "rating button" part with form tag.
 
 ### Useful resources
 
