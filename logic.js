@@ -13,7 +13,6 @@ markList.addEventListener('click', handleListClick);
 function handleListClick (event) {
     
     if (!event.target.matches('li')) return;
-    event.target.classList.add("markList__item--active");
     if (selectedItem) {
         selectedItem.classList.remove("markList__item--active");
     }
